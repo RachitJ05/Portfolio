@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #0b0f17;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+button {
+  font-family: "DM Sans", sans-serif;
+}
+.main-container {
+  min-height: 100vh;
+  background: #0b0f17;
+  overflow: hidden;
+}
+.navigation-bar {
+  justify-content: space-between;
+  background: rgba(11, 15, 23, 0.92) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  min-height: 64px !important;
+}
+.navbar-fixed-top {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.navigation-bar button {
+  font-size: 0.9rem;
+  font-family: "DM Sans", sans-serif;
+  text-transform: none;
+  padding: 7px 12px;
+  color: #c5cadd;
+}
+.navigation-bar button:hover {
+  color: #a99afc;
+  background: transparent;
+}
+.navigation-bar svg {
+  cursor: pointer;
+  color: #dce0ed;
+}
+.navigation-bar-responsive span,
+.navigation-bar-responsive p {
+  color: #0d1116;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-shell {
+  scroll-margin-top: 64px;
+}
+.light-mode {
+  background: #f6f7fb !important;
+  color: #202536;
+}
+.light-mode p,
+.light-mode a,
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode h5,
+.light-mode label,
+.light-mode button {
+  color: inherit;
+}
+.light-mode .navigation-bar {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-bottom: 1px solid #e3e6ef;
+}
+.light-mode .nav-brand {
+  color: #202536;
+}
+.light-mode .navigation-bar button {
+  color: #4d566b;
+}
+.light-mode .navigation-bar svg {
+  color: #30394d;
+}
+.light-mode .navigation-bar svg {
+  color: #dce0ed;
+}
+@media (max-width: 768px) {
+  .navigation-bar button {
+    font-size: 0.85rem;
+  }
+  .items-container {
+    padding: 5%;
+  }
+}
+.nav-brand {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.45rem;
+  color: #f4f5fb;
+  letter-spacing: -0.08em;
+}
+.nav-brand span {
+  color: #a99afc;
+}
+.achievement-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 35px;
+  padding: 22px 25px;
+  background: #121927;
+  border: 1px solid #263044;
+  border-radius: 12px;
+}
+.achievement-strip div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.achievement-strip strong {
+  font-size: 1.5rem;
+  color: #b3a5ff;
+}
+.achievement-strip span {
+  font-size: 0.78rem;
+  color: #929bad;
+}
+@media (max-width: 600px) {
+  .achievement-strip {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* Light theme overrides */
+.light-mode {
+  background: #f6f7fb !important;
+  color: #202536;
+}
+.light-mode .hero {
+  background:
+    radial-gradient(
+      ellipse at 78% 48%,
+      rgba(141, 120, 246, 0.13),
+      transparent 34%
+    ),
+    #f6f7fb;
+  color: #202536;
+}
+.light-mode .hero-copy h1,
+.light-mode .section-heading h1,
+.light-mode .journey-content h3,
+.light-mode .project-info h2,
+.light-mode .skill-card h3,
+.light-mode .contact-panel h1 {
+  color: #202536;
+}
+.light-mode .hero-kicker,
+.light-mode .hero-description,
+.light-mode .section-heading > p,
+.light-mode .journey-content p,
+.light-mode .journey-content li,
+.light-mode .project-info > p,
+.light-mode .skill-card > p,
+.light-mode .contact-panel > p {
+  color: #596276;
+}
+.light-mode .history-section,
+.light-mode .contact-section {
+  background: #f6f7fb;
+}
+.light-mode .skills-container,
+.light-mode .projects-container {
+  background: #edf0f7;
+}
+.light-mode .journey-item,
+.light-mode .skill-card,
+.light-mode .project-card {
+  background: #fff;
+  border-color: #dfe3ed;
+  box-shadow: 0 8px 24px rgba(25, 35, 60, 0.04);
+}
+.light-mode .project-stack span,
+.light-mode .chip {
+  background: #edf0f7 !important;
+  color: #48536b !important;
+  border-color: #dce1ec !important;
+}
+.light-mode .site-footer {
+  background: #e9edf5;
+  border-color: #dce1ec;
+}
+.light-mode .site-footer > span,
+.light-mode .site-footer a,
+.light-mode .social_icons a {
+  color: #596276;
+}
+.light-mode .contact-panel {
+  background:
+    radial-gradient(
+      ellipse at 90% 10%,
+      rgba(141, 120, 246, 0.13),
+      transparent 42%
+    ),
+    #fff;
+  border-color: #d9dced;
+}
+.light-mode .secondary-button {
+  color: #30394d !important;
+  border-color: #c7ccda;
+}
+.light-mode .initials-card {
+  background: linear-gradient(145deg, rgba(143, 119, 255, 0.18), #fff);
+  box-shadow: 0 25px 70px rgba(40, 45, 80, 0.12);
+}
+.light-mode .initials-card > span {
+  color: #40366e;
+}
+.light-mode .initials-card small {
+  color: #726b91;
+}
+.light-mode .floating-tag {
+  background: #fff;
+  color: #39435a;
+  border-color: #dfe3ed;
+  box-shadow: 0 10px 30px rgba(25, 35, 60, 0.1);
+}
+.light-mode .achievement-strip {
+  background: #fff;
+  border-color: #dfe3ed;
+}
+.light-mode .achievement-strip span {
+  color: #667087;
+}
+.light-mode .navigation-bar-responsive {
+  background: #fff;
+}
+.light-mode .navigation-bar-responsive span,
+.light-mode .navigation-bar-responsive p {
+  color: #202536;
+}

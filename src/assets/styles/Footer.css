@@ -1,0 +1,40 @@
+.site-footer {
+  padding: 25px 9%;
+  background: #080b12;
+  border-top: 1px solid #202738;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.site-footer > span {
+  font-size: 0.75rem;
+  color: #7f899d;
+}
+.site-footer > div {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.site-footer a {
+  color: #aab2c3;
+  display: flex;
+  align-items: center;
+}
+.site-footer a:hover {
+  color: #a99afc;
+}
+.footer-codolio {
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 25px 7%;
+    flex-wrap: wrap;
+  }
+  .site-footer > span:nth-child(2) {
+    display: none;
+  }
+}
